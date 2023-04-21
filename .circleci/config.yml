@@ -14,13 +14,10 @@ jobs:
             - v1-dependencies-
       - run:
           name: Install dependencies
-          command: npm install nvm
+          command: npm install nvm    
       - run:
           name: Install dependencies
-          command: nvm install 14.17.0    
-      - run:
-          name: Install dependencies
-          command: npm install node 14.12.0
+          command: npm install node
       - save_cache:
           paths:
             - node_modules
