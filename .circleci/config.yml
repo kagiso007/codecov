@@ -12,12 +12,15 @@ jobs:
             - v1-dependencies-{{ checksum "package.json" }}
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
-      - run:    
-          name: install node
-          command: nvm install 14.12.0      
       - run:
           name: Install dependencies
-          command: npm install
+          command: npm install nvm
+      - run:
+          name: Install dependencies
+          command: nvm install 14.17.0    
+      - run:
+          name: Install dependencies
+          command: npm install node 14.12.0
       - save_cache:
           paths:
             - node_modules
