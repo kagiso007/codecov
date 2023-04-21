@@ -1,0 +1,27 @@
+{
+  "name": "codecov",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require ts-node/register test/**/**npm ",
+    "cover": "nyc --reporter=lcov --reporter=text mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kagiso007/codecov.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kagiso007/codecov/issues"
+  },
+  "homepage": "https://github.com/kagiso007/codecov#readme",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "eslint": "^8.38.0",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0"
+  }
+}
