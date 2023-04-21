@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require ts-node/register test/**/**npm ",
+    "test": "mocha",
     "cover": "nyc --reporter=lcov --reporter=text mocha"
   },
   "repository": {
